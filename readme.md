@@ -4,7 +4,7 @@
 
 - [Tanzu Kubernetes Grid Integrated edition (Formerly Enterprise PKS) Installation with the TKGI Management Console](#tanzu-kubernetes-grid-integrated-edition-formerly-enterprise-pks-installation-with-the-tkgi-management-console)
   - [Prerequisites](#prerequisites)
-  - [Install TKGI 1.6 with TKGI Management Console (EPMC)](#install-tkgi-16-with-tkgi-management-console-epmc)
+  - [Install TKGI 1.7 with TKGI Management Console (EPMC)](#install-tkgi-16-with-tkgi-management-console-epmc)
     - [Step 0: Download EPMC OVF File](#step-0-download-epmc-ovf-file)
     - [Step 1: Create resource pools for the TKGI Management & Compute Plane virtual machines](#step-1-create-resource-pools-for-the-tkgi-management--compute-plane-virtual-machines)
     - [Step 2: Deploy the EPMC OVF File](#step-2-deploy-the-epmc-ovf-file)
@@ -16,11 +16,11 @@
 This lab guide is designed for the TKGI-Ninja-Baseline Template. You must complete the [NSX-T 2.5.1 Manual Install Lab Guide](https://github.com/ModernAppsNinja/Nsxt2-5-1ManualInstall_NM4894)
 
 
-## Install TKGI 1.6 with TKGI Management Console (EPMC)
+## Install TKGI 1.7 with TKGI Management Console (EPMC)
 
 Please be sure to complete the requirements in the [Prerequisites](#prerequisites) section above before proceeding.
 
-### Step 0: Download EPMC OVF File
+### Step 0: Download TKGI Management Console OVF File
 
 #### Users of this lab will need to use their own access to download the files for EPMC. Please download the EPMC OVA file to control center before proceeding.
 
@@ -32,7 +32,7 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 <img src="media/2020-05-02-19-09-47.png">
 </details>
 
-#### 1.2 Name the resource pool `pks-mgmt-1`, leave all other values to default and click `OK` to create the resource pool
+#### 1.2 Name the resource pool `tkgi-mgmt-1`, leave all other values to default and click `OK` to create the resource pool
 
 <details><summary>Screenshot 1.2</summary>
 <img src="media/2020-05-02-19-37-10.png">
@@ -44,15 +44,15 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 <img src="media/2020-05-02-19-09-47.png">
 </details>
 
-#### 1.4 Name the resource pool `pks-comp-1`, leave all other values to default and click `OK` to create the resource pool
+#### 1.4 Name the resource pool `tkgi-comp-1`, leave all other values to default and click `OK` to create the resource pool
 
 <details><summary>Screenshot 1.4</summary>
 <img src="media/2020-05-03-15-49-24.png">
 </details>
 
-### Step 2: Deploy the EPMC OVF File
+### Step 2: Deploy the TKGI-MC OVF File
 
-#### 2.1  Navigate to the `Hosts and Clusters` page, expand `RegionA01`, right click on the resource pool `pks-mgmt-1` and select `Deploy OVF Template`
+#### 2.1  Navigate to the `Hosts and Clusters` page, expand `RegionA01`, right click on the resource pool `tkgi-mgmt-1` and select `Deploy OVF Template`
 
 <details><summary>Screenshot 2.1</summary>
 <img src="media/2019-12-05-16-49-14.png">
