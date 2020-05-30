@@ -16,7 +16,7 @@
 This lab guide is designed for the TKGI-Ninja-Baseline Template. You must complete the [NSX-T 2.5.1 Manual Install Lab Guide](https://github.com/ModernAppsNinja/Nsxt2-5-1ManualInstall_NM4894)
 
 
-## Install TKGI 1.7 with TKGI Management Console (EPMC)
+## Install TKGI 1.7 with TKGI Management Console
 
 Please be sure to complete the requirements in the [Prerequisites](#prerequisites) section above before proceeding.
 
@@ -180,13 +180,13 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 <img src="media/2020-05-03-16-24-00.png">
 </details>
 
-#### 2.17 Return to the vSphere web client, expand `Recent Tasks` and verify that the epmc ovf package import is complete. If your OVF Package import is not yet completed, please wait until it completes before proceeding.
+#### 2.17 Return to the vSphere web client, expand `Recent Tasks` and verify that the tkgi-mc ovf package import is complete. If your OVF Package import is not yet completed, please wait until it completes before proceeding.
 
 <details><summary>Screenshot 2.17</summary>
 <img src="media/2019-08-24-00-38-15.png">
 </details>
 
-#### 2.18 From the `Hosts and Clusters` page, navigate to and expand the `RegionA01-MGMT01 > pks-mgmt-01` resource pool, right click `epmc-01a` and select `Power > Power On`. 
+#### 2.18 From the `Hosts and Clusters` page, navigate to and expand the `RegionA01-MGMT01 > pks-mgmt-01` resource pool, right click `tkgi-mc-01a` and select `Power > Power On`. 
 
 <details><summary>Screenshot 2.18</summary>
 <img src="media/2019-08-24-01-09-42.png">
