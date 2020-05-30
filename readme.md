@@ -64,13 +64,13 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 <img src="media/2019-11-21-14-15-03.png">
 </details>
 
-#### 2.3 On the `Select Name and Folder` page, set the `Virtual Machine Name` to `epmc-01a` and click `Next`
+#### 2.3 On the `Select Name and Folder` page, set the `Virtual Machine Name` to `tkgi-mc-01a` and click `Next`
 
 <details><summary>Screenshot 2.3</summary>
 <img src="media/2019-08-24-00-10-05.png">
 </details>
 
-#### 2.4 On the `Select a compute resource` page, expand `RegionA01-MGMT01` and select the `pks-mgmt-1` resource pool and click `Next`.
+#### 2.4 On the `Select a compute resource` page, expand `RegionA01-MGMT01` and select the `tkgi-mgmt-1` resource pool and click `Next`.
 
 
 <details><summary>Screenshot 2.4</summary>
@@ -110,7 +110,7 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 - Default Gateway: `192.168.110.1`
 - Domain Name Servers: `192.168.110.10`
 - Domain Search Path: `corp.local`
-- FQDN: `epmc-01a.corp.local`
+- FQDN: `tkgi-mc-01a.corp.local`
 - Click `Next`
 
 <details><summary>Screenshot 2.9</summary>
@@ -138,7 +138,7 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 
 #### 2.13 In the `New Host` dialogue enter the following values:
 
-- Name: `epmc-01a`
+- Name: `tkgi-mc-01a`
 - IP Address: `192.168.110.28`
 - Click `Add Host`
 
@@ -148,7 +148,7 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 
 #### 2.14 In the `New Host` dialogue enter the following values:
 
-- Name: `pks`
+- Name: `tkgi`
 - IP Address: `10.40.14.4`
 - Uncheck (False) `Create associated pinter record`
 - Click `Add Host`
@@ -194,7 +194,7 @@ Please be sure to complete the requirements in the [Prerequisites](#prerequisite
 
 ### Step 3: Complete the installation workflow
 
-#### 3.1 From the Control Center Desktop, open a new browser tab in chrome, and navigate to [https://epmc-01a.corp.local/login](https://epmc-01a.corp.local/login), login with the username `root` and the password `VMware1!`, click `INSTALL`, and then click `START CONFIGURATION`
+#### 3.1 From the Control Center Desktop, open a new browser tab in chrome, and navigate to [https://tkgi-mc-01a.corp.local/login](https://tkgi-mc-01a.corp.local/login), login with the username `root` and the password `VMware1!`, click `INSTALL`, and then click `START CONFIGURATION`
 
 <details><summary>Screenshot 3.1.1</summary>
 <img src="media/2020-05-03-09-26-02.png">
@@ -256,7 +256,7 @@ Note: If the `Next` box is greyed out after you have entered all the values, try
 #### 3.4 In the `3.Identity`section please enter the following values (leave any unspecified values set to their default value):
 
 - Select `Local user database`
-- PKS API FQDN: `pks.corp.local`
+- PKS API FQDN: `tkgi.corp.local`
 - Configure Created CLusters to Use UAA as the OIDC Provider: `True`
 
 <details><summary>Screenshot 3.4</summary>
@@ -266,13 +266,13 @@ Note: If the `Next` box is greyed out after you have entered all the values, try
 #### 3.5 Enter the following values in section `4. Availability Zones` (leave any unspecified values set to their default value):
 
 - Under `Availability Zone`
-  - Name: `PKS-MGMT-1`
+  - Name: `TKGI-MGMT-1`
   - This is the management availability zone: `True`
-  - Compute Resource: `pks-mgmt-1`
+  - Compute Resource: `tkgi-mgmt-1`
   - Click `Save Availability Zone`
 - Click `Add Availability Zone`
-  - Name: `PKS-COMP`
-  - Compute Resource: `pks-comp-1`
+  - Name: `TKGI-COMP`
+  - Compute Resource: `tkgi-comp-1`
   - Click `Save Availability Zone`
 - Click `Next`
 
@@ -408,7 +408,7 @@ Navigate to the 2nd page of the `Deployment Metadata` screen and observe the IP 
 <img src="media/2019-09-11-09-51-30.png">
 </details>
 
-#### 3.18 To access the Ops Manager UI, from Control Center, get the Ops Manager IP address from `EPMC->Deployment Metadata->Ops Manager Address`, and also get the `Ops Manager Admin User Name` and `Ops Manager Admin User Password`.  Then, open a new chrome browser tab and load up the Ops Manager IP address and login with the username and password you retrieved.
+#### 3.18 To access the Ops Manager UI, from Control Center, get the Ops Manager IP address from [https:tkgi-mc.corp.local](https:tkgi-mc.corp.local) UI `Deployment Metadata->Ops Manager Address`, and also get the `Ops Manager Admin User Name` and `Ops Manager Admin User Password`.  Then, open a new chrome browser tab and load up the Ops Manager IP address and login with the username and password you retrieved.
 
 <details><summary>Screenshot 3.18.1</summary>
 <img src="media/2019-09-11-13-56-20.png">
@@ -422,7 +422,7 @@ Navigate to the 2nd page of the `Deployment Metadata` screen and observe the IP 
 <img src="media/2019-08-24-20-08-17.png">
 </details>
 
-#### 3.19 Return to the `epmc-01a` web console, navigate to the `Deployment Metadata` and find the `Enteprise PKS Admin User Name` and `Password` You will use this information in the next step to log into the PKS API.
+#### 3.19 Return to the `epmc-01a` web console, navigate to the `Deployment Metadata` and find the `Enteprise PKS Admin User Name` and `Password` You will use this information in the next step to log into the TKGI API.
 
 <details><summary>Screenshot 3.19</summary>
 <img src="media/2019-08-24-20-14-59.png">
