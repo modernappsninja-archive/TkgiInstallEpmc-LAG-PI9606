@@ -422,7 +422,7 @@ Navigate to the 2nd page of the `Deployment Metadata` screen and observe the IP 
 <img src="media/2019-08-24-20-08-17.png">
 </details>
 
-#### 3.19 Return to the `epmc-01a` web console, navigate to the `Deployment Metadata` and find the `Enteprise PKS Admin User Name` and `Password` You will use this information in the next step to log into the TKGI API.
+#### 3.19 Return to the `tkgi-mc-01a` web console, navigate to the `Deployment Metadata` and find the `Enteprise PKS Admin User Name` and `Password` You will use this information in the next step to log into the TKGI API.
 
 <details><summary>Screenshot 3.19</summary>
 <img src="media/2019-08-24-20-14-59.png">
@@ -430,7 +430,7 @@ Navigate to the 2nd page of the `Deployment Metadata` screen and observe the IP 
 
 #### 3.20 From the control center desktop, open a putty session to `ubuntu@cli-vm` and from the prompt, enter the following command to login to the PKS API. Be sure to use the password you gathered in the previous step:
 
-`pks login -a pks.corp.local -u admin -p ReplaceWithPassword -k` 
+`pks login -a tkgi.corp.local -u admin -p ReplaceWithPassword -k` 
 
 <details><summary>Screenshot 3.20</summary>
 <img src="media/2019-08-24-20-18-45.png">
